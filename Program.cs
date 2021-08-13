@@ -54,7 +54,7 @@ namespace ABB.API.SDK.Template
                 HttpClient client = new HttpClient();
 
                 //External API service end point url
-                string baseUrl = "https://localhost:44322/ExtractedData/export";
+                string baseUrl = "http://localhost:15445/ExtractedData/export";
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 var response = client.PostAsync(baseUrl, new StringContent(deviceGroupData, Encoding.UTF8, "application/json")).Result;
             }
