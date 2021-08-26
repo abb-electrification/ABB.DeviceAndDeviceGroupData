@@ -1,4 +1,4 @@
-# API.SDK.DeviceData
+# ABB.DeviceAndDeviceGroupData
 
 A console application, in the context of C#, is an application that takes input and displays output at a command line console with access to three basic data streams: standard input, standard output and standard error.
 It is the simplest form of a C# program and is typically invoked from the Windows command prompt.
