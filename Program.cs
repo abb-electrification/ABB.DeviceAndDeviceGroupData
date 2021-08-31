@@ -46,7 +46,7 @@ namespace Electrification.ABB.SDK.Device.Data
                 HttpClient client = new HttpClient();
 
                 //External API service end point url
-                string baseUrl = "http://localhost:15445/ExtractedData/export";
+                string baseUrl = "http://localhost:25742/ExtractedData/export";
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 var response = client.PostAsync(baseUrl, new StringContent(deviceGroupData, Encoding.UTF8, "application/json")).Result;
                 Console.WriteLine(response.Content);
